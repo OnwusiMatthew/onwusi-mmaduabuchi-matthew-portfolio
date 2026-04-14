@@ -137,16 +137,6 @@ header .desktop-nav-links, header nav > a {
     gap: 1.5rem;
 }
 
-.box1-intro {
-    margin: 2rem;
-    padding: 2rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    display: grid;
-    grid-template-columns: repeat: 1fr;
-    grid-template-rows: repeat(2, auto);
-    gap: 2rem; 
-}  
-
 .box1 h2 {
     display: flex;
     font-size: 1.8rem;
@@ -166,6 +156,45 @@ header .desktop-nav-links, header nav > a {
     font-size: 1.2rem;
     font-weight: 350;
 }
+
+.box1-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4rem 0;
+    width: 100%; 
+} 
+
+.box1-intro div{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    gap: rem;
+    padding: 0.1rem;
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: ccenter;
+    align-items: center;
+}
+
+.box1-intro h3 {
+    font-size: 1.5rem;
+}
+
+.box1-intro p {
+    margin: 1rem 0;
+    font-size: 1.3rem;  
+}
+
+.box1-intro img {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    transition: scale o.9s ease-in-out;
+}
+
+   
 
 
 
