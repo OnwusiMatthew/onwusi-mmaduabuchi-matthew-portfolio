@@ -105,6 +105,7 @@ header .desktop-nav-links, header nav > a {
     width: 90%;
     max-width: 50rem;
     font-size: 1.2rem;
+    margin: 0 auto;
 }
 
 .hero img {
@@ -131,7 +132,7 @@ header .desktop-nav-links, header nav > a {
 }
 
 
-/* about sectiion */
+/* About sectiion */
 .box1 {
     margin-top: 2rem;
     display: flex;
@@ -193,7 +194,8 @@ header .desktop-nav-links, header nav > a {
 
 .box1-intro p {
     margin: 1rem 0;
-    font-size: 1.3rem;  
+    font-size: 1.3rem;
+       
 }
 
 .box1-intro img {
@@ -202,6 +204,8 @@ header .desktop-nav-links, header nav > a {
     object-fit: cover;  
 }
 
+
+/* Skills Sections */
 .box2 {
     display: flex;
     flex-direction: column;
@@ -257,6 +261,176 @@ header .desktop-nav-links, header nav > a {
     transform: scale(1.05);
 }
 
+.box3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+    width: 100%; 
+}
+
+.box3 h2 {
+    margin: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+.box3-content {
+    display: grid;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.1rem;
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    grid-template-columns: repeat: 1fr;
+    grid-template-rows: repeat(4, auto);
+    
+    
+}
+
+.box3-content article {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgb(6, 153, 104);
+    color: #f6f6f6;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 15px;
+    opacity: 90%;
+    /* justify-content: center;
+    align-items: center; */
+    transition: transform 0.3s ease-in-out;
+    font-size: 25px;
+    
+}
+
+/* Contact Section */
+.box4 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+    width: 100%; 
+}
+
+.box4 h2 {
+    margin: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.box4 p {
+    z-index: 3;
+    text-align: center;
+    width: 90%;
+    max-width: 50rem;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+.box4-action {
+    display: grid;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4rem 0;
+    width: 100%;
+    grid-template-columns: repeat: 1fr 1fr;
+    grid-template-rows: auto; 
+}
+    
+
+.box4-action form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 75%;
+    max-width: 40rem;
+    margin: 2rem auto;
+    background-color: rgb(75, 165, 165);
+    padding: 2rem 1rem;
+    border-radius: 15px; 
+
+}
+
+.box4-action label {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.first-last,
+.email-course {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.first-last > div,
+.email-course > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.box4-action form input,
+.box4-action form select {
+    outline: 0;
+    height: 2.5rem;
+    border-radius: 7px;
+    padding: 0 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.comment textarea {
+    min-height: 7rem;
+    padding: 0.5rem;
+
+} 
+
+.box4-action button {
+    background-color: rgb(208, 243, 137);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.9rem;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: filter 0.3s ease-in-out;
+    margin: 0.9rem 0;
+    cursor: pointer;
+}
+
+.box4-action button:hover {
+    filter: brightness(0.7);
+
+}
+
+.box4-action ul {
+    border: 1px solid #f6f6f6;
+    background-color: rgb(95, 238, 190);
+    padding: 1rem auto;
+    margin: 0 auto;
+    width: 40%;
+    height: 320px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
 
 @media(min-width:767px) {
     .box1-intro {
@@ -271,28 +445,75 @@ header .desktop-nav-links, header nav > a {
 } 
 
 @media(min-width: 1000px) {
+     .mobile {
+        display: none;
+    }
+    
+    .box1-intro {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    header .desktop-nav-links, header nav > a  {
+        height: 100%;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    header nav > ul > li a {
+        color: black;
+        font-weight: 600;
+    }
+
+
     .box1-intro {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        font-size: 4rem;
+        
     }
 
     .box2-content {
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: auto;  
     }
+
+     .box3-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,auto);  
+    }
+
+    .box4-action {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap:2rem;
+        justify-content: center;
+    }
 }
 
 @media(min-width: 1024px) {
     .box1-intro {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-    } 
+    }
 
     .box2-content {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
-    }          
+    }
+    
+    .box3-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,auto);  
+    }
+
+    .box4-action {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap:2rem;
+        justify-content: center;
+        
+    }
 }
 
    
