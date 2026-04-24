@@ -87,6 +87,8 @@ header .desktop-nav-links, header nav > a {
     font-size: 1.2rem;
 }
 
+/* Hero Section */
+
 .hero {
     position: relative;
     display: flex;
